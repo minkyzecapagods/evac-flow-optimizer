@@ -1,0 +1,4 @@
+networkx
+# TODO:
+# - Adicionar sub-bibliotecas necessárias de otimização se aplicável
+# - Evitar pacotes que exijam compilação nativa complexa no teste do professor

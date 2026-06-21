@@ -1,0 +1,7 @@
+c Instância fictícia para validação inicial (Formato DIMACS / pynetgen)
+p min 4 4
+n 1 10
+n 4 -10
+a 1 2 5
+a 2 3 5
+a 3 4 5
