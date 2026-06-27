@@ -1,0 +1,59 @@
+c ============================================================
+c Instância: grande_2_andares.net
+c Descrição: Edifício com 2 andares e 3 saídas de emergência
+c
+c Andar 1 (nós 1-8):
+c   1=SalaA1  2=SalaB1  3=SalaC1  4=CorrL1  5=CorrR1
+c   6=Escada1 7=Escada2 8=HallTérreo
+c
+c Andar 2 (nós 9-15):
+c   9=SalaA2 10=SalaB2 11=SalaC2 12=CorrL2 13=CorrR2
+c  14=Escada1_top 15=Escada2_top
+c
+c Saídas (nós 16-18):
+c  16=SaidaFrontal  17=SaidaLateral  18=SaidaFundos
+c
+c Pessoas:
+c  Andar 1: SalaA1=25, SalaB1=30, SalaC1=20
+c  Andar 2: SalaA2=20, SalaB2=25, SalaC2=15
+c  Total: 135 pessoas
+c ============================================================
+p min 18 24
+n 1   25
+n 2   30
+n 3   20
+n 9   20
+n 10  25
+n 11  15
+n 16 -200
+n 17 -200
+n 18 -200
+c --- Andar 1: corredores internos ---
+a 1  4  10  1
+a 2  4  12  1
+a 2  5  12  1
+a 3  5  10  1
+a 4  6  10  2
+a 5  7  10  2
+a 4  8  8   2
+a 5  8  8   2
+c --- Escadas: andar 2 -> andar 1 ---
+a 14  6  8   2
+a 15  7  8   2
+c --- Andar 2: corredores internos ---
+a 9  12  10  1
+a 10 12  12  1
+a 10 13  12  1
+a 11 13  10  1
+a 12 14   8  2
+a 13 15   8  2
+c --- Saídas do térreo ---
+a 6  16  15  1
+a 7  16  15  1
+a 8  17  20  1
+a 8  18  15  1
+a 6  17  10  1
+a 7  18  10  1
+c --- Saída direta andar 2 (escada de incêndio externa) ---
+a 12 18   6  3
+a 13 17   6  3

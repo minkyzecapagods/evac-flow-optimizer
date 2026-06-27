@@ -1,0 +1,22 @@
+c ============================================================
+c Instância: gargalo_critico.net
+c Descrição: Cenário de gargalo crítico — muitas pessoas,
+c            única saída com capacidade limitada.
+c
+c  [Sala1=40] \
+c  [Sala2=40]-->[GARGALO cap=5]-->[Saida]
+c  [Sala3=40] /
+c
+c Total: 120 pessoas, capacidade do gargalo = 5/turno
+c T* esperado: ~24 (120/5 = 24 turnos + tempos de deslocamento)
+c ============================================================
+p min 6 5
+n 1  40
+n 2  40
+n 3  40
+n 6 -200
+a 1  4  20  1
+a 2  4  20  1
+a 3  4  20  1
+a 4  5   5  1
+a 5  6   5  1

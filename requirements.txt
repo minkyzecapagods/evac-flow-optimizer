@@ -1,4 +1,8 @@
-networkx
-# TODO:
-# - Adicionar sub-bibliotecas necessárias de otimização se aplicável
-# - Evitar pacotes que exijam compilação nativa complexa no teste do professor
+# Evac-Flow Optimizer — Dependências
+#
+# O núcleo do algoritmo (parser, time_expansion, edmonds_karp, optimizer, main)
+# NÃO requer nenhuma biblioteca externa — roda com Python 3.8+ padrão.
+#
+# networkx é listado apenas como referência bibliográfica e possível
+# ferramenta de visualização futura; NÃO é importado no código de produção.
+# networkx

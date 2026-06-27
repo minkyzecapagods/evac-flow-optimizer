@@ -1,0 +1,13 @@
+c ============================================================
+c Instância: pequeno_4_nos.net
+c Descrição: Rede mínima de validação (cadeia linear)
+c Topologia:  1 --5--> 2 --5--> 3 --5--> 4
+c             fonte=1 (10 pessoas), sumidouro=4
+c Resposta esperada: T* = 3 (tau=1 por aresta)
+c ============================================================
+p min 4 3
+n 1 10
+n 4 -10
+a 1 2 5 1
+a 2 3 5 1
+a 3 4 5 1

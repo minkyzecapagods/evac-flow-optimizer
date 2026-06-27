@@ -1,0 +1,45 @@
+c ============================================================
+c Instância: medio_10_nos.net
+c Descrição: Andar único de edifício com 10 pontos estratégicos
+c
+c Topologia (andar único):
+c
+c   [Sala1]--->[Corr_A]--->[Corr_B]--->[Saida_Norte]
+c      |                       |
+c   [Sala2]--->[Corr_C]--->[Corr_D]--->[Saida_Sul]
+c      |           |
+c   [Sala3]   [Escada]--->[Hall_Térreo]--->[Saida_Prin]
+c
+c Vértices:
+c   1 = Sala 1      (15 pessoas)
+c   2 = Sala 2      (20 pessoas)
+c   3 = Sala 3      (10 pessoas)
+c   4 = Corredor A
+c   5 = Corredor B
+c   6 = Corredor C
+c   7 = Corredor D
+c   8 = Saída Norte  (sumidouro)
+c   9 = Saída Sul    (sumidouro)
+c  10 = Saída Principal (sumidouro)
+c
+c Total: 45 pessoas
+c ============================================================
+p min 10 12
+n 1  15
+n 2  20
+n 3  10
+n 8  -45
+n 9  -45
+n 10 -45
+a 1  4  8  1
+a 2  4  6  1
+a 2  6  6  1
+a 3  6  5  1
+a 4  5  8  2
+a 5  8  8  1
+a 6  7  6  1
+a 7  9  6  1
+a 6  10 4  3
+a 1  5  5  2
+a 3  7  4  2
+a 2  10 3  2
