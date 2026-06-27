@@ -47,7 +47,7 @@ evac-flow-optimizer/
 │   └── gargalo_critico.net   # Gargalo severo, 120 pessoas
 ├── outputs/                  # Relatórios gerados automaticamente
 └── docs/
-    └── relatorio_unidade3.md
+    └── relatorio.md
 ```
 
 ---
