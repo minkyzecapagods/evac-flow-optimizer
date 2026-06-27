@@ -8,7 +8,6 @@ c  [Sala2=40]-->[GARGALO cap=5]-->[Saida]
 c  [Sala3=40] /
 c
 c Total: 120 pessoas, capacidade do gargalo = 5/turno
-c T* esperado: ~24 (120/5 = 24 turnos + tempos de deslocamento)
 c ============================================================
 p min 6 5
 n 1  40

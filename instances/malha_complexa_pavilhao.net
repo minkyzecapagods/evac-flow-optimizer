@@ -1,0 +1,45 @@
+c ============================================================
+c Instância: malha_complexa_pavilhao.net
+c Descrição: Malha de alta densidade com loops e múltiplos caminhos redundantes
+c Topologia: Rede complexa interconectada (Pavilhão de exposições) com 27 nós e 32 arestas
+c            fontes: 1 (30 pessoas), 2 (30 pessoas), 3 (40 pessoas)
+c            sumidouros: 26 (capacidade -50), 27 (capacidade -50)
+c ============================================================
+p min 27 32
+n 1 30
+n 2 30
+n 3 40
+n 26 -50
+n 27 -50
+a 1 4 15 1
+a 1 5 15 1
+a 2 6 15 1
+a 2 7 15 1
+a 3 8 20 1
+a 3 9 20 1
+a 4 10 10 2
+a 5 11 12 1
+a 6 12 10 1
+a 7 13 15 2
+a 8 14 8 1
+a 9 15 10 1
+a 10 16 15 1
+a 11 16 10 2
+a 12 17 12 1
+a 13 17 12 1
+a 14 18 10 1
+a 15 18 15 2
+a 16 19 15 2
+a 16 20 10 1
+a 17 21 20 1
+a 17 22 12 2
+a 18 23 15 1
+a 18 24 10 1
+a 19 25 25 1
+a 20 25 15 1
+a 21 26 25 1
+a 22 26 15 2
+a 23 27 30 1
+a 24 27 10 1
+a 25 26 20 1
+a 25 27 20 2

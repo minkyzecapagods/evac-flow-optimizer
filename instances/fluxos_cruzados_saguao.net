@@ -1,0 +1,21 @@
+c ============================================================
+c Instância: fluxos_cruzados_saguao.net
+c Descrição: Colisão e cruzamento de fluxos concorrentes no saguão central
+c Topologia: Alas opostas (1 e 2) cruzam no nó central 5 e dividem-se para saídas 8 e 9
+c            fontes: 1 (30 pessoas), 2 (30 pessoas)
+c            sumidouros: 8 (capacidade -30), 9 (capacidade -30)
+c Resposta esperada: T* = 8 (concorrência temporal limpa no nó de interseção)
+c ============================================================
+p min 9 8
+n 1 30
+n 2 30
+n 8 -30
+n 9 -30
+a 1 3 15 1
+a 2 4 15 1
+a 3 5 12 2
+a 4 5 12 2
+a 5 6 10 1
+a 5 7 15 1
+a 6 8 10 2
+a 7 9 15 2

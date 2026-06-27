@@ -1,0 +1,24 @@
+c ============================================================
+c Instância: predio_3_andares_funil.net
+c Descrição: Edifício de 3 andares com estrangulamento (efeito funil)
+c Topologia: Fontes (andares 1, 2, 3) convergem para escada central (nós 4->5->7->10)
+c            fontes: 1 (20 pessoas), 2 (20 pessoas), 3 (20 pessoas)
+c            sumidouro: 12 (capacidade -60)
+c Resposta esperada: T* elevado devido ao afunilamento severo de capacidade nas escadas
+c ============================================================
+p min 12 11
+n 1 20
+n 2 20
+n 3 20
+n 12 -60
+a 1 4 15 1
+a 4 5 5 3
+a 2 6 15 1
+a 5 7 5 1
+a 6 7 15 1
+a 7 8 8 3
+a 3 9 15 1
+a 8 10 8 1
+a 9 10 15 1
+a 10 11 12 3
+a 11 12 30 1
