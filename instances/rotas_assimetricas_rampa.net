@@ -4,7 +4,7 @@ c Descrição: Dilema de rotas assimétricas (Rota Curta/Estreita vs Rampa Longa
 c Topologia: Rota A (2->3->4->8 | cap=4, tau=3) vs Rota B (2->5->6->7->8 | cap=20, tau=10)
 c            fonte: 1 (40 pessoas)
 c            sumidouro: 8 (capacidade -40)
-c Resposta esperada: T* = 12 (o fluxo é dividido de forma ótima entre os dois caminhos)
+c Resposta esperada: T* = 11 (o fluxo é dividido de forma ótima entre os dois caminhos)
 c ============================================================
 p min 8 7
 n 1 40
